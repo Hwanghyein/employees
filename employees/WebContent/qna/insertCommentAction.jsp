@@ -16,7 +16,7 @@
 	ResultSet rs1=null;
 	PreparedStatement stmt2=null;
 	try{
-		conn =DriverManager.getConnection("jdbc:mariadb://localhost/ghkdsla1", "ghkdsla1", "java1004!");
+		conn =DriverManager.getConnection("jdbc:mariadb://ghkdsla1.cafe24.com/ghkdsla1", "ghkdsla1", "java1004!");
 		System.out.println("conn:"+conn);
 		//commentNo 구하는 것
 		 stmt1=conn.prepareStatement("select max(comment_no) from employees_qna_comment");

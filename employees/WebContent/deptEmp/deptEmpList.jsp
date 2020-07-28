@@ -50,7 +50,7 @@
 	PreparedStatement stmt2=null;
 	ResultSet rs2=null;
 	try{
-		conn =DriverManager.getConnection("jdbc:mariadb://localhost/ghkdsla1", "ghkdsla1", "java1004!");
+		conn =DriverManager.getConnection("jdbc:mariadb://ghkdsla1.cafe24.com/ghkdsla1", "ghkdsla1", "java1004!");
 			System.out.println(conn);
 		
 		//2.현재페이지의 deptEmp 테이블 행들

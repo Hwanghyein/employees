@@ -51,7 +51,7 @@
 		PreparedStatement stmt2=null;
 		ResultSet rs2=null;
 		try{
-			conn =DriverManager.getConnection("jdbc:mariadb://localhost/ghkdsla1", "ghkdsla1", "java1004!");
+			conn =DriverManager.getConnection("jdbc:mariadb://ghkdsla1.cafe24.com/ghkdsla1", "ghkdsla1", "java1004!");
 			//검색어 유뮤에 따라 동적 쿼리
 			if(searchWord.equals("")){
 				stmt1 =conn.prepareStatement("select qna_no,qna_title,qna_user,qna_date from employees_qna order by qna_no desc limit ?,?");//내용을 붙어주려고

@@ -52,7 +52,7 @@
 	ResultSet rs2=null;
 	ArrayList<Departments> list=null;
 	try{
-	conn =DriverManager.getConnection("jdbc:mariadb://localhost/ghkdsla1", "ghkdsla1", "java1004!");
+	conn =DriverManager.getConnection("jdbc:mariadb://ghkdsla1.cafe24.com/ghkdsla1", "ghkdsla1", "java1004!");
 	
 
 	
@@ -95,10 +95,10 @@
 	}catch(Exception e){
 		e.printStackTrace();
 	}finally{
-		rs1.close();
-		stmt1.close();
 		rs2.close();
 		stmt2.close();
+		rs1.close();
+		stmt1.close();
 		conn.close();
 	}
 %>

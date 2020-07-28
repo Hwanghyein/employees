@@ -51,7 +51,7 @@
 	PreparedStatement stmt2=null;//쿼리의 보낼 준비
 	ResultSet rs2=null;//결과문을 가져오기
 	try{
-		conn =DriverManager.getConnection("jdbc:mariadb://localhost/ghkdsla1", "ghkdsla1", "java1004!");//db 연결
+		conn =DriverManager.getConnection("jdbc:mariadb://ghkdsla1.cafe24.com/ghkdsla1", "ghkdsla1", "java1004!");//db 연결
 		System.out.print(conn);//연결정보 출력하기
 		//2.현재페이지의 employees 테이블 행들
 		list = new ArrayList<Employees>();//배열리스트 선언

@@ -31,7 +31,7 @@
 	ResultSet rs=null;
 	QnA qna=null;
 	try{
-		conn =DriverManager.getConnection("jdbc:mariadb://localhost/ghkdsla1", "ghkdsla1", "java1004!");
+		conn =DriverManager.getConnection("jdbc:mariadb://ghkdsla1.cafe24.com/ghkdsla1", "ghkdsla1", "java1004!");
 			System.out.println("conn:"+conn);
 			stmt =conn.prepareStatement("select qna_no,qna_title,qna_content,qna_user,qna_date from employees_qna where qna_no=?");
 			stmt.setInt(1,qnaNo);

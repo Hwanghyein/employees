@@ -30,7 +30,7 @@
 	ResultSet rs1=null;
 	PreparedStatement stmt2=null;
 	try{
-		conn =DriverManager.getConnection("jdbc:mariadb://localhost/ghkdsla1", "ghkdsla1", "java1004!");
+		conn =DriverManager.getConnection("jdbc:mariadb://ghkdsla1.cafe24.com/ghkdsla1", "ghkdsla1", "java1004!");
 		stmt1 =conn.prepareStatement("select max(qna_no) from employees_qna");
 		System.out.println("stmt1:"+stmt1);
 		rs1=stmt1.executeQuery();

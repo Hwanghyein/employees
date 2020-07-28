@@ -11,7 +11,7 @@
 	Connection conn=null;
 	PreparedStatement stmt=null;
 	try{
-		conn =DriverManager.getConnection("jdbc:mariadb://localhost/ghkdsla1", "ghkdsla1", "java1004!");
+		conn =DriverManager.getConnection("jdbc:mariadb://ghkdsla1.cafe24.com/ghkdsla1", "ghkdsla1", "java1004!");
 		System.out.println("conn:"+conn);
 		 stmt =conn.prepareStatement("delete from employees_qna where qna_no=? and qna_pw=?");
 		stmt.setInt(1,qnaNo);

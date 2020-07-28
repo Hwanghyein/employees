@@ -18,7 +18,7 @@
 	Connection conn =null;
 	PreparedStatement stmt=null;
 	try{
-		conn =DriverManager.getConnection("jdbc:mariadb://localhost/ghkdsla1", "ghkdsla1", "java1004!");
+		conn =DriverManager.getConnection("jdbc:mariadb://ghkdsla1.cafe24.com/ghkdsla1", "ghkdsla1", "java1004!");
 	stmt=conn.prepareStatement("update employees_qna set qna_title=?,qna_content=?,qna_user=?,qna_date=? where qna_no=?");
 	stmt.setString(1,qnaTitle);
 	stmt.setString(2,qnaContent);
